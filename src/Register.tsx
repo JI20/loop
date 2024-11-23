@@ -20,7 +20,6 @@ function Register() {
     navigate("/map")
   };
 
-  // Only allow positive numbers for age
   const handleAgeChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     if (value === "" || /^[1-9][0-9]*$/.test(value)) {
