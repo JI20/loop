@@ -2,7 +2,8 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Home } from "../../pages/home/Home";
 import { Navigation } from "../navigation/Navigation";
 import Register from "../../Register";
-
+import { Event } from "../../pages/event/Event";
+        
 export default function Routes() {
   const routes = createBrowserRouter([
     {
@@ -32,6 +33,14 @@ export default function Routes() {
           path: "/friends",
           element: <h1>Friends</h1>,
           children: [],
+        },
+        {
+          path: "/event",
+          element: <Outlet />,
+          children: [
+            { path: "", element: <h1>Events</h1> },
+            { path: ":id", element: <Event /> },
+          ],
         },
       ],
     },
