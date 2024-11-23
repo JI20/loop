@@ -1,35 +1,65 @@
-import { useState } from "react";
-export const MarkerIcon = () => {
-  const [openDetail, setOpenDetail] = useState(false);
+import { memo, useEffect, useRef, useState } from "react";
+import { UserEvent } from "../../config/events";
 
+export const MarkerIcon = memo((props: any) => {
+  const { event } = props;
+  const [openDetail, setOpenDetail] = useState(false);
+  const markerRef: React.MutableRefObject<HTMLDivElement> = useRef();
+
+  const handleClickOutside = (event) => {
+    if (markerRef.current && !markerRef.current.contains(event.target)) {
+      setOpenDetail(false);
+    }
+  };
+
+  const handleClick = () => {
+    if (!openDetail) {
+      setOpenDetail(true);
+    }
+  };
+
+  useEffect(() => {
+    if (openDetail) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [openDetail]);
   return (
     <div className="w-full h-full">
       <div
         className={`${
           openDetail
-            ? "w-[250px] h-[120px] rounded-[18px]"
-            : "w-[40px] h-[40px] rounded-full"
-        } bg-white border-black transition-all duration-75`}
+            ? "w-[250px] rounded-[18px] bg-white"
+            : "w-[40px] h-[40px] rounded-full bg-blue"
+        } border-black`}
         onClick={() => {
-          setOpenDetail((state) => !state);
+          handleClick();
         }}
+        ref={markerRef}
       >
         {openDetail && (
-          <div className="h-full w-full px-4 py-3 flex flex-col justify-between">
+          <div className="z-[20] full w-full px-4 py-3 flex flex-col justify-between">
             <div>
-              <h1 className="font-['Poppins'] font-bold text-xl">Basketball</h1>
+              <h1 className="font-['Poppins'] font-bold text-xl">
+                {event.name}
+              </h1>
               <p className="text-l">
-                <span className="text-orange">@Jonas</span> wants to play
-                Basketball!
+                <span className="text-orange">@{event.host}</span>
               </p>
             </div>
             <div>
+              <p>{event.description}</p>
               <button className="bg-blue px-7 py-1 rounded-full text-white">
                 Join!
               </button>
               <div className="flex justify-between w-full">
-                <p>3/5</p>
-                <p>in 30 min</p>
+                <p>
+                  {event.participants}/{event.max_number_of_participants}
+                </p>
+                <p>{event.start_time}</p>
               </div>
             </div>
           </div>
@@ -37,4 +67,4 @@ export const MarkerIcon = () => {
       </div>
     </div>
   );
-};
+});
