@@ -4,7 +4,6 @@ import { Marker } from "@adamscybot/react-leaflet-component-marker";
 import { MarkerIcon } from "../marker/MarkerIcon";
 import { UserEvent } from "../../config/events";
 import { useState } from "react";
-import { Popup } from "react-leaflet";
 
 const position: LatLngTuple = [48.135, 11.582];
 

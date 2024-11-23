@@ -1,12 +1,11 @@
 import { memo, useEffect, useRef, useState } from "react";
-import { UserEvent } from "../../config/events";
 
 export const MarkerIcon = memo((props: any) => {
   const { event } = props;
   const [openDetail, setOpenDetail] = useState(false);
-  const markerRef: React.MutableRefObject<HTMLDivElement> = useRef();
+  const markerRef = useRef<HTMLDivElement>(null);
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = (event: any) => {
     if (markerRef.current && !markerRef.current.contains(event.target)) {
       setOpenDetail(false);
     }
