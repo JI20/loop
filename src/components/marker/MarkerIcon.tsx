@@ -1,4 +1,5 @@
 import { memo, useEffect, useRef, useState } from "react";
+import { categoriesColors } from "../../config/categories";
 
 export const MarkerIcon = memo((props: any) => {
   const { event } = props;
@@ -18,6 +19,10 @@ export const MarkerIcon = memo((props: any) => {
       setOpenDetail(true);
     }
   };
+
+  const color = categoriesColors.find((c) => {
+    return event.category === c.name;
+  })?.color;
 
   useEffect(() => {
     if (openDetail) {
@@ -40,13 +45,13 @@ export const MarkerIcon = memo((props: any) => {
             className={`${
               openDetail
                 ? "w-[300px] h-[135px] bg-white"
-                : "w-[40px] h-[40px] rounded-full bg-white border-blue border-[2px] hover:bg-blue"
+                : `w-[40px] h-[40px] rounded-full bg-white border-${color} border-[3px]`
             }`}
             onClick={() => {
               handleClick();
             }}
           >
-            {openDetail && (
+            {openDetail ? (
               <div className="w-full px-4 py-3 flex flex-col justify-between">
                 <div>
                   <h1 className="font-bold text-xl max-h-[30px] overflow-y-hidden">
@@ -65,6 +70,10 @@ export const MarkerIcon = memo((props: any) => {
                     <p>{event.start_time}</p>
                   </div>
                 </div>
+              </div>
+            ) : (
+              <div className="flex justify-center items-center h-full">
+                <div className={`bg-${color} rounded-full w-[20px] h-[20px]`} />
               </div>
             )}
           </div>

@@ -5,6 +5,7 @@ import { MarkerIcon } from "../marker/MarkerIcon";
 import { UserEvent } from "../../config/events";
 import { useState } from "react";
 import { categories } from "../../config/categories";
+import { categoriesColors } from "../../config/categories";
 
 const position: LatLngTuple = [48.135, 11.582];
 
@@ -53,29 +54,33 @@ export const Map = (props: any) => {
                 }}
                 icon={<MarkerIcon event={event} />}
                 eventHandlers={{
-                  click: () => setActiveMarker(event.id),
+                  click: () => {
+                    setActiveMarker(event.id);
+                  },
                 }}
-                zIndexOffset={activeMarker === event.id ? 1000 : 0} // Active marker is above
+                zIndexOffset={activeMarker === event.id ? 2000 : 0} // Active marker is above
               ></Marker>
             );
           })}
       </MapContainer>
       <div className="absolute bottom-[60px] left-0 w-screen z-[2000]">
         <ul className="flex w-full justify-start overflow-x-scroll">
-          {categories.map((c) => {
+          {categoriesColors.map((c) => {
             return (
               <li
-                className={`mx-2 bg-white ${
-                  !hiddenCategories.includes(c) ? "border-blue" : "border-black"
+                className={`mx-2 ${
+                  !hiddenCategories.includes(c.name)
+                    ? "bg-" + c.color + "-light" + " border-" + c.color
+                    : "border-black bg-grey-light"
                 } border-[2px] rounded-full`}
               >
                 <button
-                  className="px-12 py-1"
+                  className={`px-9 py-[2px] text-black`}
                   onClick={() => {
-                    handleCategoryFilter(c);
+                    handleCategoryFilter(c.name);
                   }}
                 >
-                  {c}
+                  {c.name}
                 </button>
               </li>
             );
