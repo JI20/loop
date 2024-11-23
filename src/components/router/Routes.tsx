@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Home } from "../../pages/home/Home";
 import { Navigation } from "../navigation/Navigation";
+import Explore from "../../pages/explore/Explore";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -20,7 +21,7 @@ export default function Routes() {
         },
         {
           path: "/explore",
-          element: <h1>Explore!</h1>,
+          element: <Explore/>,
           children: [],
         },
         {
