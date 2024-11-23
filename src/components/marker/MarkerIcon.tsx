@@ -94,15 +94,20 @@ export const MarkerIcon = memo((props: any) => {
       ) : (
         <div className="bg-blue w-[340px] h-[135px] p-3 border-black border-[2px] flex flex-col justify-between p-2">
           <h1 className="text-white text-xl font-semibold">
-            Wann join the {event.name}?
+            Wanna join the {event.name}?
           </h1>
           <div className="flex justify-between">
-            <button className="border-white border-[2px] px-4 py-1 text-l text-white">
+            <button
+              className="border-white hover:bg-white hover:text-black border-[2px] px-4 py-1 text-l text-white"
+              onClick={() => {
+                setConfirmModal(false);
+              }}
+            >
               Cancel
             </button>
             <Link
               to={`/event/${event.id}`}
-              className="border-white border-[2px] px-4 py-1 text-l bg-white text-black"
+              className="border-white hover:bg-blue-mid-light hover:border-blue-mid-light border-[2px] px-4 py-1 text-l bg-white text-black"
             >
               Join
             </Link>
