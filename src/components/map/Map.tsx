@@ -5,6 +5,7 @@ import { MarkerIcon } from "../marker/MarkerIcon";
 import { UserEvent } from "../../config/events";
 import { useState } from "react";
 import { categoriesColors } from "../../config/categories";
+import { useAuth } from "../../contexts/authContext";
 
 const position: LatLngTuple = [48.135, 11.582];
 
@@ -12,6 +13,7 @@ export const Map = (props: any) => {
   const { events } = props;
   const [activeMarker, setActiveMarker] = useState<string | null>(null);
   const [hiddenCategories, setHiddenCategories] = useState<string[]>([]);
+  const { userName, userAge } = useAuth();
 
   const handleCategoryFilter = (c: string) => {
     let hiddenCategoriesNew = structuredClone(hiddenCategories);
@@ -63,6 +65,9 @@ export const Map = (props: any) => {
             );
           })}
       </MapContainer>
+      <div className="fixed z-[2000] bg-black rounded-full w-[50px] h-[50px] right-0 top-0 mr-[20px] mt-[20px] flex justify-center items-center">
+        <p className="text-white">{userName[0]}</p>
+      </div>
       <div className="fixed bottom-[60px] left-0 w-screen z-[2000]">
         <ul className="flex w-full justify-start overflow-x-scroll">
           {categoriesColors.map((c) => {
