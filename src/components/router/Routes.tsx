@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Home } from "../../pages/home/Home";
 import { Navigation } from "../navigation/Navigation";
+import Register from "../../Register";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -16,6 +17,10 @@ export default function Routes() {
       children: [
         {
           path: "",
+          element: <Register />,
+        },
+        {
+          path: "/map",
           element: <Home />,
         },
         {
