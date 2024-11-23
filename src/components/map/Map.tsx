@@ -63,7 +63,7 @@ export const Map = (props: any) => {
             );
           })}
       </MapContainer>
-      <div className="absolute bottom-[60px] left-0 w-screen z-[2000]">
+      <div className="fixed bottom-[60px] left-0 w-screen z-[2000]">
         <ul className="flex w-full justify-start overflow-x-scroll">
           {categoriesColors.map((c) => {
             return (
