@@ -16,36 +16,8 @@ function Register() {
       return;
     }
 
-    const userData = {
-      name,
-      age: parseInt(age),
-      event_history: [],
-      friends: [],
-      num_red_flames: 0,
-      num_green_flames: 0,
-    };
-
-    try {
-      const response = await fetch("http://127.0.0.1:8080/user/create", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userData),
-      });
-
-      if (response.ok) {
-        const token = await response.json();
-        localStorage.setItem("jwt", token); // Save JWT to localStorage
-        setMessage("Account created successfully!");
-        navigate("/map")
-      } else {
-        setMessage("Failed to create account. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setMessage("An error occurred. Please try again.");
-    }
+    setMessage("Account created successfully!");
+    navigate("/map")
   };
 
   // Only allow positive numbers for age
