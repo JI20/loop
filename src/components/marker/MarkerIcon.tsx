@@ -1,5 +1,6 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { categoriesColors } from "../../config/categories";
+import { Link } from "react-router-dom";
 
 export const MarkerIcon = memo((props: any) => {
   const { event } = props;
@@ -99,9 +100,12 @@ export const MarkerIcon = memo((props: any) => {
             <button className="border-white border-[2px] px-4 py-1 text-l text-white">
               Cancel
             </button>
-            <button className="border-white border-[2px] px-4 py-1 text-l bg-white text-black">
+            <Link
+              to={`/event/${event.id}`}
+              className="border-white border-[2px] px-4 py-1 text-l bg-white text-black"
+            >
               Join
-            </button>
+            </Link>
           </div>
         </div>
       )}

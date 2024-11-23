@@ -34,6 +34,7 @@ export const Map = (props: any) => {
         scrollWheelZoom={true}
         doubleClickZoom={false}
         className="h-full w-full"
+        zoomControl={false}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
