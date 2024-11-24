@@ -1,4 +1,4 @@
-const SocialIcon = (props) => {
+const SocialIcon = (props: any) => {
   const { color } = props;
   return (
     <svg

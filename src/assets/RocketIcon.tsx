@@ -1,4 +1,4 @@
-const RocketIcon = (props) => {
+const RocketIcon = (props: any) => {
   const { color } = props;
   return (
     <svg
