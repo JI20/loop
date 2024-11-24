@@ -3,7 +3,7 @@ import { Home } from "../../pages/home/Home";
 import { Navigation } from "../navigation/Navigation";
 import Register from "../../Register";
 import { Event } from "../../pages/event/Event";
-        
+
 export default function Routes() {
   const routes = createBrowserRouter([
     {
