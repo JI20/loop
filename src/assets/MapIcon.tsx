@@ -1,4 +1,4 @@
-const MapIcon = (props) => {
+const MapIcon = (props: any) => {
   const { color } = props;
   return (
     <svg
