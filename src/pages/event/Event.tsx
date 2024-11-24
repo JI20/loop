@@ -38,18 +38,23 @@ export const Event = () => {
         ></Marker>
       </MapContainer>
       <div className="flex justify-center w-screen">
+        <h1 className="text-black font-bold text-3xl pt-2">{event?.name}</h1>
+      </div>
+      <div className="flex justify-center w-screen px-8">
+        <p className="text-black pt-2">{event?.description}</p>
+      </div>
+      <div className="mt-[100px] flex justify-center w-screen">
         <h1 className="text-black font-bold text-4xl pt-2 pb-2">
           You're in, {userName}!
         </h1>
       </div>
       <div className="flex justify-center w-screen">
-        <div className="h-[2px] w-[60vw] bg-black" />
-      </div>
-      <div className="flex justify-center w-screen">
-        <h1 className="text-black font-bold text-3xl pt-2">{event?.name}</h1>
+        <div className="h-[2px] w-[80vw] bg-black" />
       </div>
       <div className="flex justify-center w-screen px-8">
-        <p className="text-black pt-2">{event?.description}</p>
+        <p className="text-black pt-2">
+          We hope you have a great time at the event
+        </p>
       </div>
     </div>
   );

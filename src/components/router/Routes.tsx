@@ -1,9 +1,11 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Home } from "../../pages/home/Home";
 import { Navigation } from "../navigation/Navigation";
+import Friends from "../../pages/friends/Friends";
 import Register from "../../Register";
 import { Event } from "../../pages/event/Event";
-        
+import { Explore } from "../../pages/explore/Explore";
+
 export default function Routes() {
   const routes = createBrowserRouter([
     {
@@ -26,12 +28,12 @@ export default function Routes() {
         },
         {
           path: "/explore",
-          element: <h1>Explore!</h1>,
+          element: <Explore />,
           children: [],
         },
         {
           path: "/friends",
-          element: <h1>Friends</h1>,
+          element: <Friends />,
           children: [],
         },
         {
