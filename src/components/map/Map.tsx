@@ -68,23 +68,26 @@ export const Map = (props: any) => {
       <div className="fixed z-[2000] bg-black rounded-full w-[50px] h-[50px] right-0 top-0 mr-[20px] mt-[20px] flex justify-center items-center">
         <p className="text-white">{userName[0]}</p>
       </div>
-      <div className="fixed bottom-[60px] left-0 w-screen z-[2000]">
-        <ul className="flex w-full justify-start overflow-x-scroll">
+      <div className="fixed bottom-[60px] left-0 z-[2000] max-w-[600px]">
+        <ul className="flex w-full justify-start overflow-x-scroll flex-wrap">
           {categoriesColors.map((c) => {
             return (
               <li
-                className={`mx-2 ${
+                className={`mx-1 ${
                   !hiddenCategories.includes(c.name)
-                    ? "bg-" + c.color + "-light" + " border-" + c.color
-                    : "border-black bg-grey-light"
-                } border-[2px] rounded-full`}
+                    ? "bg-black [&>button]:text-white"
+                    : "border-grey bg-grey-light [&>button]:text-grey"
+                } border-[2px] rounded-full mb-1 flex justify-center items-center`}
               >
                 <button
-                  className={`px-9 py-[2px] text-black`}
+                  className={`px-9 py-[1px] flex justify-center items-center`}
                   onClick={() => {
                     handleCategoryFilter(c.name);
                   }}
                 >
+                  <div
+                    className={`w-[5px] h-[5px] rounded-full mr-2 bg-${c.color}`}
+                  />
                   {c.name}
                 </button>
               </li>

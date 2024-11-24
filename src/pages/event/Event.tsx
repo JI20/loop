@@ -4,9 +4,12 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import { Marker } from "@adamscybot/react-leaflet-component-marker";
 import { MarkerIcon } from "../../components/marker/MarkerIcon";
 import ReactConfetti from "react-confetti";
+import { useAuth } from "../../contexts/authContext";
 export const Event = () => {
   const { id } = useParams();
   const event = events.find((e) => e.id === id);
+  const { userName, userAge } = useAuth();
+
   return (
     <div className="absolute z-[] w-screen h-screen overflow-y-hidden">
       <ReactConfetti tweenDuration={10000} />
@@ -35,7 +38,9 @@ export const Event = () => {
         ></Marker>
       </MapContainer>
       <div className="flex justify-center w-screen">
-        <h1 className="text-black font-bold text-4xl pt-2">You're in!</h1>
+        <h1 className="text-black font-bold text-4xl pt-2 pb-2">
+          You're in, {userName}!
+        </h1>
       </div>
       <div className="flex justify-center w-screen">
         <div className="h-[2px] w-[60vw] bg-black" />

@@ -7,15 +7,15 @@ const authContext = createContext<{
   setUserName: React.Dispatch<React.SetStateAction<string>>;
   setUserAge: React.Dispatch<React.SetStateAction<number>>;
 }>({
-  userName: "",
+  userName: "admin",
   userAge: 0,
   setUserName: () => {},
   setUserAge: () => {},
 });
 
 const AuthProvider = ({ children }: any): JSX.Element => {
-  const [userName, setUserName] = useState<string>("");
-  const [userAge, setUserAge] = useState<number>(0);
+  const [userName, setUserName] = useState<string>("Jonas");
+  const [userAge, setUserAge] = useState<number>(20);
 
   /** Performance optimisation:
    * Prevents unnecessary rerenders of child components
