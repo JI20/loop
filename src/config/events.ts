@@ -491,11 +491,21 @@ export const events: UserEvent[] = [
   },
 ];
 
+const basketball_image = "https://www.lcherald.com/sites/lcherald.com/files/d09d71dcdd_Ar00101001.jpg"
+const christmas_image = "https://www.tripsavvy.com/thmb/Goy_r0X4GTOEKEXdc_NY4FA0iwo=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-97754277-5a8dd3f9a9d4f90036b4b4e0.jpg"
+const photography_image = "https://www.muchbetteradventures.com/magazine/content/images/2019/10/29124611/joseph-pearson-tcgTS6Dr-oQ-unsplash-1.jpg"
+const cooking_class = "https://churchillmanor.com/wp-content/uploads/2017/03/Cooking-Class-1.jpg"
+const yoga_image = "https://www.lynchburgvirginia.org/wp-content/uploads/2020/08/Yoga-in-the-park.jpg"
+const craft_workshop = "https://bk.asia-city.com/sites/default/files/u142691/mha_artcraft.jpg"
+const painting_workshop = "https://mathildeberry.com/wp-content/uploads/2018/09/IMG_7463.jpg"
+const hike_image = "https://www.mountainlifemedia.ca/wp-content/uploads/2022/08/Switzerland-group-hike-Zermatt-Kristin-Schnelten.jpg"
+const rock_climbing = "https://www.miyaradventures.com/wp-content/uploads/2015/07/Feature_Image_GirlClimbing.jpg"
+
 export const eventSuggestions: UserEvent[] = [
   {
     id: "a1",
     name: "Basketball Game at Olympiapark",
-    picture: "https://via.placeholder.com/150",
+    picture: basketball_image,
     description:
       "A friendly game of basketball at the Olympiapark courts. All skill levels welcome!",
     category: "Sport",
@@ -512,7 +522,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a2",
     name: "Christmas Market Stroll: Marienplatz",
-    picture: "https://via.placeholder.com/150",
+    picture: christmas_image,
     description:
       "Immerse yourself in the festive spirit at the famous Christmas market at Marienplatz!",
     category: "Relax",
@@ -529,7 +539,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a3",
     name: "Munich Photography Walk: Winter Edition",
-    picture: "https://via.placeholder.com/150",
+    picture: photography_image,
     description:
       "Explore Munich's winter charm and capture magical photos of the city.",
     category: "Art",
@@ -546,7 +556,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a4",
     name: "Bavarian Cooking Class: Festive Edition",
-    picture: "https://via.placeholder.com/150",
+    picture: cooking_class,
     description:
       "Learn how to cook Bavarian holiday specialties with a professional chef.",
     category: "Food",
@@ -563,7 +573,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a5",
     name: "Yoga Session in the Park",
-    picture: "https://via.placeholder.com/150",
+    picture: yoga_image,
     description:
       "Join us for a relaxing yoga session in the Englischer Garten.",
     category: "Nature",
@@ -580,7 +590,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a6",
     name: "Winter Crafts Workshop",
-    picture: "https://via.placeholder.com/150",
+    picture: craft_workshop,
     description:
       "Create beautiful handmade decorations for the holiday season.",
     category: "Art",
@@ -597,7 +607,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a7",
     name: "Christmas Lights Tour",
-    picture: "https://via.placeholder.com/150",
+    picture: christmas_image,
     description: "Discover Munich's most stunning holiday light displays.",
     category: "Relax",
     tags: ["lights", "holiday", "walking tour"],
@@ -613,7 +623,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-51",
     name: "Evening Basketball Match",
-    picture: "https://example.com/basketball.jpg",
+    picture: basketball_image,
     description: "Join a friendly evening basketball game with locals.",
     category: "Sport",
     tags: ["basketball", "team", "fun"],
@@ -629,7 +639,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-52",
     name: "Christmas Market Food Tour",
-    picture: "https://example.com/christmas-market.jpg",
+    picture: christmas_image,
     description: "Explore the best food stalls at Munich's Christmas Market.",
     category: "Food",
     tags: ["christmas", "market", "food"],
@@ -645,7 +655,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-53",
     name: "Abstract Painting Workshop",
-    picture: "https://example.com/painting.jpg",
+    picture: painting_workshop,
     description:
       "Let your creativity flow in this hands-on abstract art session.",
     category: "Art",
@@ -662,7 +672,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-54",
     name: "Christmas Yoga by Candlelight",
-    picture: "https://example.com/yoga.jpg",
+    picture: yoga_image,
     description: "Relax and stretch in a warm, candlelit Christmas setting.",
     category: "Relax",
     tags: ["yoga", "christmas", "meditation"],
@@ -678,7 +688,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-55",
     name: "Guided Winter Hike",
-    picture: "https://example.com/hike.jpg",
+    picture: hike_image,
     description: "Explore Munich's snowy trails on a guided hike.",
     category: "Nature",
     tags: ["hiking", "nature", "winter"],
@@ -694,7 +704,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-56",
     name: "Live Acoustic Christmas Songs",
-    picture: "https://example.com/acoustic.jpg",
+    picture: christmas_image,
     description:
       "Enjoy live acoustic performances of your favorite Christmas songs.",
     category: "Music",
@@ -711,7 +721,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-57",
     name: "Rock Climbing Session",
-    picture: "https://example.com/climbing.jpg",
+    picture: rock_climbing,
     description:
       "Indoor rock climbing session for beginners and experts alike.",
     category: "Sport",
@@ -728,7 +738,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "aevent-58",
     name: "Christmas Market Photo Walk",
-    picture: "https://example.com/photowalk.jpg",
+    picture: christmas_image,
     description:
       "Capture the magic of Munich's Christmas markets on this guided photo walk.",
     category: "Art",
@@ -745,7 +755,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a6e54f94-9ef6-4f6c-b8e1-49e80534b105",
     name: "Basketball Game at Olympiapark",
-    picture: "https://via.placeholder.com/150",
+    picture: basketball_image,
     description:
       "A friendly game of basketball at the Olympiapark courts. All skill levels welcome!",
     category: "Sport",
