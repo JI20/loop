@@ -500,6 +500,11 @@ const craft_workshop = "https://bk.asia-city.com/sites/default/files/u142691/mha
 const painting_workshop = "https://mathildeberry.com/wp-content/uploads/2018/09/IMG_7463.jpg"
 const hike_image = "https://www.mountainlifemedia.ca/wp-content/uploads/2022/08/Switzerland-group-hike-Zermatt-Kristin-Schnelten.jpg"
 const rock_climbing = "https://www.miyaradventures.com/wp-content/uploads/2015/07/Feature_Image_GirlClimbing.jpg"
+const meetup_image = "https://d2uetvsama7sl8.cloudfront.net/prod/wp-content/uploads/2017/11/15100325/girls-main.jpg"
+const wine_tasting = "https://www.tasteofhome.com/wp-content/uploads/2019/05/winetasting_shutterstock_1094613269.jpg"
+const board_games = "https://cdn.thewirecutter.com/wp-content/media/2021/07/boardgames-2048px-2233.jpg"
+const karaoke_image = "https://img.olhardigital.com.br/wp-content/uploads/2022/07/karaoke-1-iStock-1354039208.jpg"
+const meditation_image = "https://www.healthstatus.com/wp-content/uploads/2019/07/relaxation-meditation-yoga-holistic-peaceful.jpg"
 
 export const eventSuggestions: UserEvent[] = [
   {
@@ -772,7 +777,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "e33f85c3-f24c-41b1-90b1-3ec3b73b8e2d",
     name: "Tech Meetup: AI Trends",
-    picture: "https://via.placeholder.com/150",
+    picture: meetup_image,
     description:
       "Discuss the latest trends in AI with fellow tech enthusiasts.",
     category: "Relax",
@@ -789,7 +794,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "4b2f4b5d-b2e4-4de7-8d71-9e2cfcb54147",
     name: "Munich Photography Walk",
-    picture: "https://via.placeholder.com/150",
+    picture: photography_image,
     description:
       "Explore Munich's iconic spots and take stunning photos with fellow photographers.",
     category: "Art",
@@ -806,7 +811,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "c86f137e-62d4-4b6c-8c65-394af8bdf616",
     name: "Cooking Class: Bavarian Dishes",
-    picture: "https://via.placeholder.com/150",
+    picture: cooking_class,
     description:
       "Learn how to cook authentic Bavarian dishes with a professional chef.",
     category: "Food",
@@ -823,7 +828,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "df3f349b-bd23-468e-907b-2b6f73baf0f9",
     name: "Yoga Session in the Park",
-    picture: "https://via.placeholder.com/150",
+    picture: yoga_image,
     description:
       "Join us for a relaxing yoga session in the Englischer Garten.",
     category: "Nature",
@@ -840,7 +845,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "12131e3b-cc65-49e7-9460-38e8f68d2c96",
     name: "Basketball Match",
-    picture: "https://example.com/basketball.jpg",
+    picture: basketball_image,
     description: "A friendly basketball game at the local park.",
     category: "Sport",
     tags: ["basketball", "outdoor", "fun"],
@@ -856,7 +861,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "a6e54f94-9ef6-4f6c-b8e1-49e80534b105",
     name: "Basketball Game at Olympiapark",
-    picture: "https://via.placeholder.com/150",
+    picture: basketball_image,
     description:
       "A friendly game of basketball at the Olympiapark courts. All skill levels welcome!",
     category: "Sport",
@@ -873,7 +878,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "e33f85c3-f24c-41b1-90b1-3ec3b73b8e2d",
     name: "Tech Meetup: AI Trends",
-    picture: "https://via.placeholder.com/150",
+    picture: meetup_image,
     description:
       "Discuss the latest trends in AI with fellow tech enthusiasts.",
     category: "Relax",
@@ -890,7 +895,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "4b2f4b5d-b2e4-4de7-8d71-9e2cfcb54147",
     name: "Munich Photography Walk",
-    picture: "https://via.placeholder.com/150",
+    picture: photography_image,
     description:
       "Explore Munich's iconic spots and take stunning photos with fellow photographers.",
     category: "Art",
@@ -907,7 +912,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "c86f137e-62d4-4b6c-8c65-394af8bdf616",
     name: "Cooking Class: Bavarian Dishes",
-    picture: "https://via.placeholder.com/150",
+    picture: cooking_class,
     description:
       "Learn how to cook authentic Bavarian dishes with a professional chef.",
     category: "Food",
@@ -924,7 +929,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "df3f349b-bd23-468e-907b-2b6f73baf0f9",
     name: "Yoga Session in the Park",
-    picture: "https://via.placeholder.com/150",
+    picture: yoga_image,
     description:
       "Join us for a relaxing yoga session in the Englischer Garten.",
     category: "Nature",
@@ -941,7 +946,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "73641e7c-22b1-4f4d-8e91-e1fd9f1a3c65",
     name: "Wine Tasting Night",
-    picture: "https://via.placeholder.com/150",
+    picture: wine_tasting,
     description:
       "An evening of exquisite wine tasting with a sommelier. Learn and enjoy!",
     category: "Food",
@@ -958,7 +963,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "afed32c6-9b45-4b42-a041-4c68214ff3b3",
     name: "Open Mic Night",
-    picture: "https://via.placeholder.com/150",
+    picture: meetup_image,
     description:
       "Share your talents or just enjoy the performances at this relaxed open mic event.",
     category: "Art",
@@ -975,7 +980,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "d06f5397-f963-4b6d-aeb7-ec654bd1a2e7",
     name: "Coding Hackathon",
-    picture: "https://via.placeholder.com/150",
+    picture: meetup_image,
     description:
       "Compete or collaborate with other coders in this 12-hour hackathon. Prizes for top projects!",
     category: "Tech",
@@ -992,7 +997,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "234b76a8-2f1e-4375-91d1-cd4dbf92830f",
     name: "Trail Running Adventure",
-    picture: "https://via.placeholder.com/150",
+    picture: hike_image,
     description:
       "Challenge yourself with a scenic trail run through Munich's beautiful landscapes.",
     category: "Sport",
@@ -1009,7 +1014,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "7a9c5d03-83c7-4e34-b1a5-2cdbb66cb24c",
     name: "Board Game Night",
-    picture: "https://via.placeholder.com/150",
+    picture: board_games,
     description:
       "Bring your favorite board games or try something new in a casual, fun setting.",
     category: "Relax",
@@ -1026,7 +1031,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "8c25b45d-bec1-401c-a45c-0ad82d2d48b3",
     name: "Karaoke Night",
-    picture: "https://via.placeholder.com/150",
+    picture: karaoke_image,
     description:
       "Unleash your inner star at our karaoke night! Come sing, laugh, and cheer.",
     category: "Art",
@@ -1043,7 +1048,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "45d6f88c-1c89-4e25-99e8-09893b7a6c7f",
     name: "Rock Climbing Basics",
-    picture: "https://via.placeholder.com/150",
+    picture: rock_climbing,
     description:
       "Learn the basics of rock climbing in a safe and friendly indoor environment.",
     category: "Sport",
@@ -1060,7 +1065,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "0b4f9e19-2dd8-4f9d-83a7-11d59cb6f9e3",
     name: "Coffee Lovers Meetup",
-    picture: "https://via.placeholder.com/150",
+    picture: meetup_image,
     description:
       "Discuss the art of coffee brewing and enjoy tastings with like-minded coffee enthusiasts.",
     category: "Food",
@@ -1076,7 +1081,7 @@ export const eventSuggestions: UserEvent[] = [
   },
   {
     id: "e66f7123-4dd5-4207-b3f9-f837a81c4923",
-    name: "Nature Walk & Picnic",
+    name: hike_image,
     picture: "https://via.placeholder.com/150",
     description:
       "Take a relaxing walk through the Isar trails, followed by a group picnic.",
@@ -1093,7 +1098,7 @@ export const eventSuggestions: UserEvent[] = [
   },
   {
     id: "9b7e3ddc-7744-4c61-9126-df1bf84928be",
-    name: "Trivia Night Challenge",
+    name: meetup_image,
     picture: "https://via.placeholder.com/150",
     description:
       "Test your knowledge across various categories in a fun and competitive trivia night.",
@@ -1111,7 +1116,7 @@ export const eventSuggestions: UserEvent[] = [
   {
     id: "30b3fdd2-ccd8-49cf-9ef3-d1a02b6bfcaf",
     name: "Meditation Workshop",
-    picture: "https://via.placeholder.com/150",
+    picture: meditation_image,
     description:
       "Learn mindfulness techniques and practice guided meditation in a serene environment.",
     category: "Nature",
