@@ -13,7 +13,7 @@ export const Map = (props: any) => {
   const { events } = props;
   const [activeMarker, setActiveMarker] = useState<string | null>(null);
   const [hiddenCategories, setHiddenCategories] = useState<string[]>([]);
-  const { userName, userAge } = useAuth();
+  const { userName } = useAuth();
 
   const handleCategoryFilter = (c: string) => {
     let hiddenCategoriesNew = structuredClone(hiddenCategories);

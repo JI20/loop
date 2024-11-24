@@ -8,7 +8,7 @@ import { useAuth } from "../../contexts/authContext";
 export const Event = () => {
   const { id } = useParams();
   const event = events.find((e) => e.id === id);
-  const { userName, userAge } = useAuth();
+  const { userName } = useAuth();
 
   return (
     <div className="absolute z-[] w-screen h-screen overflow-y-hidden">
