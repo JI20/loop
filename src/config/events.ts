@@ -1081,8 +1081,8 @@ export const eventSuggestions: UserEvent[] = [
   },
   {
     id: "e66f7123-4dd5-4207-b3f9-f837a81c4923",
-    name: hike_image,
-    picture: "https://via.placeholder.com/150",
+    name: "Hike",
+    picture: hike_image,
     description:
       "Take a relaxing walk through the Isar trails, followed by a group picnic.",
     category: "Nature",
@@ -1098,8 +1098,8 @@ export const eventSuggestions: UserEvent[] = [
   },
   {
     id: "9b7e3ddc-7744-4c61-9126-df1bf84928be",
-    name: meetup_image,
-    picture: "https://via.placeholder.com/150",
+    name: "Trivia night",
+    picture: meetup_image,
     description:
       "Test your knowledge across various categories in a fun and competitive trivia night.",
     category: "Relax",
