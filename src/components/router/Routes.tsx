@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Home } from "../../pages/home/Home";
 import { Navigation } from "../navigation/Navigation";
+import Friends from "../../pages/friends/Friends";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -25,7 +26,7 @@ export default function Routes() {
         },
         {
           path: "/friends",
-          element: <h1>Friends</h1>,
+          element: <Friends />,
           children: [],
         },
       ],
