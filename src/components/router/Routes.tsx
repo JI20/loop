@@ -2,10 +2,10 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Home } from "../../pages/home/Home";
 import { Navigation } from "../navigation/Navigation";
 import Explore from "../../pages/explore/Explore";
-
+import Friends from "../../pages/friends/Friends";
 import Register from "../../Register";
 import { Event } from "../../pages/event/Event";
-        
+
 export default function Routes() {
   const routes = createBrowserRouter([
     {
@@ -33,7 +33,7 @@ export default function Routes() {
         },
         {
           path: "/friends",
-          element: <h1>Friends</h1>,
+          element: <Friends />,
           children: [],
         },
         {
