@@ -9,10 +9,10 @@ export const ExploreCard = (props: any) => {
     <div
       className={`bg-white ${
         !(event.participants === 0) ? "border-orange" : "border-black"
-      } border-[2px] w-[250px] h-[250px] p-2 flex flex-col justify-between`}
+      } border-[2px] w-[150px] h-[190px] sm:w-[160px] sm:h-[200px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] p-2 flex flex-col justify-between`}
     >
       <div>
-        <h1 className="text-xl font-bold">{event.name}</h1>
+        <h1 className="text-l font-bold">{event.name}</h1>
         {!(event.participants === 0) && (
           <p className="text-orange">@{event.host}</p>
         )}
