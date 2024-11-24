@@ -35,7 +35,7 @@ function Register() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
-          Loop.
+          loop.
         </h1>
         <p className="text-center text-gray-600 mb-4">
           Stay in the loop and connect with others. Let's fight loneliness
