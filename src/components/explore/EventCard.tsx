@@ -1,27 +1,20 @@
 
 function EventCard(props: any) {
     return (
-      <div className="w-1/4 bg-white rounded-lg shadow-md p-6 transform transition hover:scale-105 hover:shadow-xl">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="font-semibold text-lg text-gray-800">{props.name}</h2>
-          <span className="px-3 py-1 text-sm bg-green-200 text-green-800 rounded-full">
-            {props.category}
-          </span>
+      <div className="m-1 w-1/2 mx-auto bg-white rounded-lg shadow-md transform transition hover:scale-105 hover:shadow-xl">
+        <div className="flex justify-between mb-3">
+          <div className="w-1/2"><h2 className="font-semibold text-left text-md">{props.name}</h2></div>
+          <div className="bg-[#37fca7] rounded-lg p-1 ">{props.category}</div>
         </div>
-        <div className="mb-3">
-          <p className="text-sm text-gray-600">
-            <span className="font-medium text-gray-800">Start Time:</span> {props.start_time}
-          </p>
+        <div className="flex justify-between">
+        <div className="text-left font-medium">
+            {props.participants}/{props.max_number_of_participants}
         </div>
-        <div className="flex items-center justify-between">
-          <p className="text-gray-700 text-sm">
-            <span className="font-medium text-gray-800">Participants:</span> {props.participants}/{props.max_number_of_participants}
-          </p>
-          <button className="px-4 py-1 text-white bg-blue-500 rounded-full text-sm hover:bg-blue-600">
-            Join
-          </button>
+        <div className=" text-right font-medium">
+            {props.start_time}
         </div>
-      </div>
+        </div>
+        </div>
     );
   }
   

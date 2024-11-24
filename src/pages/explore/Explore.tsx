@@ -15,21 +15,18 @@ function Explore() {
             </button>
           </div>
           <div>
-            <div>
-                {[events[0]].map((event) => (
-                    <EventCard
-                        name={event.name}
-                        description={event.description}
-                        category={event.category}
-                        start_time={event.start_time}
-                        end_time={event.end_time}
-                        max_number_of_participants={event.max_number_of_participants}
-                        participants={event.participants}
-                    />
+              {[events[0]].map((event) => (
+                  <EventCard
+                    name={event.name}
+                    category={event.category}
+                    start_time={event.start_time}
+                    end_time={event.end_time}
+                    max_number_of_participants={event.max_number_of_participants}
+                    participants={event.participants}
+                  />
                 ))}
             </div>
           </div>
-        </div>
     );
   }
   

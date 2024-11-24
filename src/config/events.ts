@@ -24,7 +24,7 @@ export const events: UserEvent[] = [
       "A friendly game of basketball at the Olympiapark courts. All skill levels welcome!",
     category: "Sport",
     tags: ["basketball", "outdoor", "friendly"],
-    start_time: "2024-11-25T15:00:00",
+    start_time: "15:00 25.11.", //2024-11-25T15:00:00
     end_time: "2024-11-25T17:00:00",
     host: "John Doe",
     max_number_of_participants: 10,
